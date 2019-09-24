@@ -9,4 +9,4 @@ import matplotlib.pyplot as plt
 plt.matshow(digits.images[3], cmap="Greys")
 plt.show()
 
-#結果として3の画像が表示される
+#結果として3の画像が表示される　
