@@ -1,14 +1,14 @@
 from __future__ import absolute_import, division, print_function, unicode_literals
 
-# TensorFlow and tf.keras
 import tensorflow as tf
+
+from tensorflow import keras
 from tensorflow.keras import layers
 
 model = tf.keras.Sequential()
-
-# ユニット数が64の全結合をモデルに追加する
+# Adds a densely-connected layer with 64 units to the model:
 model.add(layers.Dense(64, activation='relu'))
-# 全結合層をもう一つ追加する
+# Add another:
 model.add(layers.Dense(64, activation='relu'))
-# 出力ユニット数が10のソフトマックス層を追加する。
+# Add a softmax layer with 10 output units:
 model.add(layers.Dense(10, activation='softmax'))
