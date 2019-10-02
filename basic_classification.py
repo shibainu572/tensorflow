@@ -12,7 +12,7 @@ fashion_mnist = keras.datasets.fashion_mnist
 (train_images, train_labels), (test_images, test_labels) = fashion_mnist.load_data()
 # ・train_imagesとtrain_laels配列に学習のためのデータモデルをセットします。
 # ・modelはtest_imagesとtest_labelsに総じてテストします。
-
+ 
 # イメージは28X28のNumPy配列で、各要素は0~255の値をもってます。
 # 要素のラベルは0~9までの整数の値をもっています。こちらのラベルは画像が表す衣類のクラスと一致します。
 # 表は　https://www.tensorflow.org/tutorials/keras/classification　を参照
