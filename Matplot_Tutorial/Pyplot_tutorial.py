@@ -1,4 +1,7 @@
 import matplotlib.pyplot as plt
-plt.plot([1, 2, 3, 4])
+import numpy as np
+a = np.random.rand(100)
+b = np.random.rand(100)
+plt.plot(a, b)
 plt.ylabel('some number')
 plt.show()
