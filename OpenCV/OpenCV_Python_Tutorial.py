@@ -4,7 +4,6 @@ import numpy as np
 img = cv2.imread('watch.jpg', cv2.IMREAD_COLOR)
 # ピクセルのレファランスを定義します。
 px = img[55, 55]
-
 # 次に、実際にピクセルを変更します。
 img[55, 55] = [255, 255, 255]
 
@@ -15,12 +14,11 @@ print(px)
 # ROIまたは画像の領域を定義できます。
 # ROI（Region of Interest）とは、画像データのうち、操作の対象として選ぶ領域のことです。
 # 「対象領域」「注目領域」「関心領域」などともいいます。
+# img[x1:x2, y1:y2] : イメージの特定位置を切り取って表示する。
 px = img[100:150, 100:150]
 print(px)
-
 # ROIを修正する。
 img[100:150, 100:150] = [255, 255, 255]
-
 print(img.shape)
 print(img.size)
 print(img.dtype)
